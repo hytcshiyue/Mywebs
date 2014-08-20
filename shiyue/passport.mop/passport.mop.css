@@ -1,0 +1,55 @@
+/*整体框架*/
+#Header{width: 800px;height: 50px;margin: 0 auto;}
+#Content{width: 800px;height: 549px;margin: 0 auto;border: 1px solid #ccc;border-radius: 5px;}
+#Footer{width: 800px;height: 38px;margin: 30px auto;}
+
+/*头部*/
+.logo{width: 209px;height: 47px;float: left;}
+.top-nav{width: 248px;height: 14px;margin-top: 30px;margin-right: 20px;float: right;}
+.top-nav li{float: left;padding-right: 13px;}
+.top-nav a{color: #494949;text-decoration: none;} 
+.top-nav a:hover{color: #0082cd;text-decoration: underline;}
+
+/*内容*/
+.title{line-height: 36px;color: rgb(255, 255, 255);background-color: rgb(100,149,198);border: 1px solid rgb(91,136,184);text-indent:20px;font-weight: normal;}
+.content-wrapper{width: 800px;height: 511px;}
+.userInfo{width: 450px;height: 505px;float: left;}
+.pic{width: 310px;height:260px;float: left;border: 1px solid #ccc;margin-top: 70px;}
+.choice{width: 450px;height:30px;padding-top: 20px; }
+.choice-login{width: 120px;height: 28px;border-radius: 3px 0px 0px 3px; margin-left: 105px;border: 1px solid rgb(91, 136, 184);float: left;text-align: center;font-size: 18px;cursor: pointer;}
+.choice-register{width: 120px;height: 28px;border-radius: 0px 3px 3px 0px;border: 1px solid rgb(91, 136, 184);border-left: 0px; float: left;text-align: center;font-size: 18px;cursor: pointer;}
+.register-form{width: 430px;height: 424px;}
+
+.register-form ul{width:430px;height: 370px;}
+.register-form li{width: 420px;height: 40px;padding-top: 20px;position: relative;}
+.name1{text-align: right;width: 80px;height: 38px;float: left;color: rgb(102, 102, 102);font-size: 14px;padding-top: 10px;}
+.text_input{width: 308px;height: 34px;border:1px solid #ccc;float: left; color: rgb(153,153,153);}
+.validate_code{width: 115px;height: 34px;border:1px solid #ccc;float: left;color: rgb(153,153,153);font-size: 14px;}
+.image_code{width:110px;height: 36px;margin-left: 5px;background-image: url("images/imgcode (5).do");float: left;}
+.link_notice{color: rgb(0,130,204);text-decoration: none;font-size: 12px;width: 84px;height: 24px;position: absolute;top:30px;}
+.check{width: 350px;height: 23px;margin-left: 80px;display: block;}
+.check1{width:242px;height: 51px; background-image: url("images/btn_register.png");background-repeat: no-repeat;margin-left: 80px;cursor: pointer;}
+
+.login-form{width: 430px;height: 389px;display: none;}
+.login-form ul{width:430px;height: 200px;}
+.login-form li{width: 420px;height: 40px;padding-top: 20px;}
+.checkbox1 {margin-left: 20px;}
+.check2{width: 350px;height: 25px;margin-left: 80px;display: block;margin-top: 10px;}
+.login_submit{width: 80px;height: 24px;cursor: pointer;}
+.get_back_password{margin-left: 40px;color: rgb(0, 130, 204);text-decoration: none;}
+.get_back_password:hover{text-decoration: underline;}
+.check2 a{color: rgb(0,130,204);text-decoration: none;}
+.check2 a:hover{text-decoration: underline;}
+.check3{width: 350px;height: 52px;margin-left: 80px;display: block;margin-top: 25px;}
+.connect{width: 350px;height: 22px;margin-top: 20px;}
+.qq{ color: #494949;text-decoration: none; background-image: url("css/image/ico_hz.gif");background-position: 0 0;width: 40px;height: 20px; float: left;background-repeat: no-repeat;text-align: right;margin-right: 20px;}
+.weibo{color: #494949;text-decoration: none;background-image: url("css/image/ico_hz.gif");background-position: 0 -149px;height: 20px;float: left;width: 45px;background-repeat: no-repeat;text-align: right;margin-right:20px;}
+.baidu{color: #494949;text-decoration: none;background-image: url("css/image/ico_hz.gif");background-position: 0 -49px;height: 20px;float: left;width: 45px;background-repeat: no-repeat;text-align: right;margin-right: 20px;}
+.qq:hover{color: #0082cd;text-decoration: underline;}
+.weibo:hover{color: #0082cd;text-decoration: underline;}
+.baidu:hover{color: #0082cd;text-decoration: underline;}
+/*底部*/
+.footer1{width: 800px;height: 14px;text-align: center;}
+.footer1 a{color: #494949;text-decoration: none;}
+.footer1 a:hover{color: #0082cd;text-decoration: underline;}
+.footer2{width: 800px;height: 24px;text-align: center;color: rgb(153, 153, 153);padding-top: 10px;margin-bottom: 30px;}

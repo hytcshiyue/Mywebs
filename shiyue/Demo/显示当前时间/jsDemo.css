@@ -1,0 +1,8 @@
+.btn{width: 200px;height: 60px;border: 1px solid #ccc; cursor: pointer;margin:30px auto;}
+
+#ditC{width: 420px;height: 30px;padding: 5px 0 5px 0;margin: 20px auto;border-radius: 3p;border: 1px solid #bbb;box-shadow: 1px 1px 3px #999;}
+#ditDateA{width:200px;height: 30px;float: left;}
+#ditTimeA{width:160px;height: 30px;float:right;}
+.dit{width: 20px;height: 30px;background-image: url("js/dig.png");float: left;}
+.heng{width: 20px;height: 30px;background-image: url("js/dig.png");float: left;background-position: 0px -300px;}
+.mao{width: 20px;height: 30px;background-image: url("js/dig.png");float: left;background-position: 0px -330px;}

@@ -1,0 +1,7 @@
+ *{margin: 0;padding: 0;}
+
+
+ #flash{width: 750px;height: 400px;margin: 100px auto;position: relative;border:1px solid #ddd;background-image: url("images/1.jpg");}
+ #contralA{width: 290px;height:60px;padding: 10px; position: absolute;left:440px;top:310px; }
+ .flashContral{width: 60px;height: 60px;border:1px solid #ddd;float: left;display: block;text-align: center;font-size:18px;font-weight: bold; font-family: Arial;line-height: 60px;color: #444;background-color: #fafafa;margin:0 10px 0 0; }
+ .currentSpan{background-color: #a9a9a9;color: #fafafa;border:1px solid #61af47;}
