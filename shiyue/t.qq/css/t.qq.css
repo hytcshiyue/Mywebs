@@ -13,13 +13,14 @@
 .topNav{height: 35px;width: 340px;float: left;}
 
 .topNavItem{float: left;height: 35px;text-align: center;}
-.topNavItem:hover{background-color: #333;}
+.topNavItem:hover{background-color: #111;}
 .topNav a{color:#c9c9c9 ;text-decoration: none;cursor: pointer;font-size: 14px;height: 12px;padding-top: 10px;display: block;padding-right: 10px;padding-left: 10px;}
 .active a{color: #fff;}
 .icon_hot_mini{background-image: url("images/b2_20131129.png");background-position: -202px -176px;display: inline-block;width: 10px;height: 10px;}
 .tubiao{position: relative; background-image: url("images/b2_20131129.png");background-position: -184px -409px;width: 10px;height: 10px;display: inline-block;}
+.tubiaoA{cursor: pointer; position: relative; background-image: url("images/b2_20131129.png");background-position: -184px -409px;width: 10px;height: 10px;display: inline-block;}
 .right{height: 35px;float: right;}
-.geren{width: 110px;height: 174px;position: absolute;top:34px;background-color: #333;}
+.geren{width: 110px;height: 174px;position: absolute;top:34px;background-color: #333;display: none;}
 .geren li{width: 110px;height: 29px;text-align: left;}
 .geren li:hover{background-color:#1a1a1a; }
 .geren a{font-size: 12px;}
@@ -29,7 +30,11 @@
 .p4{background-image: url("images/icons_20130704.png");background-position:-60px 0;  margin-top: 8px;margin-right: 8px;}
 .searchNew{width: 158px;height: 23px;float: right; margin-top: 6px;border:1px solid #ccc;border-radius: 3px 3px 3px 3px;background-color: #fff;}
 .inputTxtnew{width: 120px;height: 23px;padding-left: 4px;border: 0;outline: none;}
-.sousuo{background-image: url("images/head_search_20120517.png");background-position: 0 0;float: right;width: 22px;height: 22px;display: block;}
+.sousuo{cursor: pointer; background-image: url("images/head_search_20120517.png");background-position: 0 0;float: right;width: 22px;height: 22px;display: block;}
+.smartBox{display: none; width: 168px;height: 112px;border:1px solid #adadad;position: absolute;top: 35px;left: 990px;background-color: #fff;}
+.smartBox li{width: 160px;height: 19px;padding: 4px 0 4px 9px;cursor: pointer;}
+.smartBox li:hover{background-color: #609ADB;}
+.icon_his{background-image: url("images/b1_20140716.png");background-position: -224px -100px;float: right;width: 11px;height: 11px;margin-right:14px;margin-top: 4px;}
 #headerRight{width: 56px;height: 15px;float: right;color: #c9c9c9;text-align: center;margin-right: 10px;margin-left: 10px;padding-top:10px;}
 
 /*应用下面的窗口*/
@@ -136,11 +141,12 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
 .bot4{width: 60px;height: 19px;cursor: pointer; margin-top: 6px; background-image: url("images/b2_20131129.png");background-position: -124px -192px;float: right; background-repeat: no-repeat;}
 
 /*内容右*/
-.side{width: 319px;height: 12368px;float: right;background-color: #dad49a;}
+.side{width: 319px;height: 12368px;float: right;background-color: #daebf8;}
 /*个人资料*/
 .side1{width: 319px;height: 190px;padding-top: 18px;}
 .side11{width: 269px;height: 88px;padding: 0 25px 3px 25px;}
-.MyPic{width: 90px;height: 80px;padding-top: 2px;float: left;background-image: url("images/100.jpg");background-size: 80px 80px;background-repeat: no-repeat;}
+.MyPic{position: relative; width: 90px;height: 80px;padding-top: 2px;float: left;background-image: url("images/100.jpg");background-size: 80px 80px;border-radius: 5px 5px 5px 5px;background-repeat: no-repeat;}
+.changePic{display: none; position: absolute;width: 80px;height: 20px;top: 60px;color: #fff;line-height: 18px;border-radius: 0 0 6px 6px;background: rgba(0,0,0,.6);text-align: center;}
 .MyInfo{width: 179px;height: 88px;float: right;}
 .tit{width: 179px;height: 19px;}
 .name{color: #dd8b2a;text-decoration: none;font-weight: normal;}
@@ -149,7 +155,7 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
 .null{color: #988712;line-height: 20px;}
 .text_link{color: #006a92;text-decoration: none;margin-right: 14px;}
 .text_link:hover{text-decoration: underline;}
-.side12{width: 319px;height: 49px;background-color:#dace90 ;}
+.side12{width: 319px;height: 49px;background-color:#d1e4f1 ;}
 .side12_list{height: 49px;padding-left: 25px;text-align: left;float: left;}
 .stat{height: 40px;display: inline-block;text-align: left;text-decoration: none;color: #dd8b2a;padding-top: 5px}
 .side12_bor{margin-top:10px;display: block;height:25px;float: left;border-left: 1px solid #cfb879;}
@@ -160,8 +166,8 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
 .favourite,.fans{min-width: 40px;}
 .side13{width: 319px;height: 50px;border-bottom: 1px solid #cfb879;}
 .medalBox{width: 294px;height: 32px;padding-left: 25px;padding-top: 10px;}
-.medalBoxA{width: 27px;height: 27px;background-image: url("images/b6_130415.png");background-position: -222px 0px;background-repeat: no-repeat;float: left;margin-right: 8px;}
-.medalBox2{background-position: -278px 0px;background-repeat: no-repeat;}
+.medalBoxA{position: relative; border: 1px solid #bebebe; width: 22px;height: 22px;background-image: url("images/b6_130415.png");background-position: -222px 0px;background-repeat: no-repeat;float: left;margin-right: 8px;}
+.medalBox2{ background-position: -278px 0px;background-repeat: no-repeat;}
 .medalBox3{background-position: -334px -31px;background-repeat: no-repeat;}
 .medalBox4{background-position: -166px -31px;background-repeat: no-repeat;}
 .medalBox5{background-position: -195px -30px;background-repeat: no-repeat;}
@@ -169,11 +175,26 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
 .medalBox7{background-position: -306px -30px;background-repeat: no-repeat;}
 .medalBox8{width: 23px;height: 23px;border:1px solid #cfb879;float: left;text-align: center;}
 .medalBox8 a{text-decoration: none;color: #b6b6b6;font-weight: bold;}
+.badgeTips{display: none; position: absolute;border: 1px solid #EDECEA;width: 350px;top: 40px;left: -50px;background: #fff;z-index: 200;}
+.sanjiao{position: absolute;top: -14px;left: 45px;}
+.bInfo{width: 328px;padding-bottom: 22px;height: 90px;padding-top:10px;padding-left: 15px;}
+.bInfoPic{width: 76px;height: 76px;float: left;background-image: url(".../images/lm.jpg");border: 1px solid #bebebe;margin-right: 5px;}
+.bLevel{padding-bottom: 6px;line-height: 18px;}
+.pb5{color: #eb9b41;padding-bottom: 5px;}
+ .hastime{background-color:  #F1F6D8;line-height: 17px;color: #390;}
+.ico_btime{background-image: url("images/b6_130415.png");background-position: -178px 0;width: 15px;height: 14px;float: left;margin-right: 4px;background-repeat: no-repeat;}
+.bUpIntro{padding: 8px 12px 15px;line-height: 19px;border-top: 1px dotted #9f9f9f;background-color: #f7f7f7;}
+.icon_bup{background-image: url("images/b6_130415.png");background-position: -194px 0;width: 14px;height: 13px;float: left;}
+.bScore{color:#930;margin-left: 8px;}
+.bSet{float: right;margin-right: 20px;line-height: 20px;}
+.bSet a{color: #006a92;text-decoration: none;}
+.bSet a:hover{text-decoration: underline;}
+.btn_moreSet{background-image: url("images/b1_20140716.png");background-position: -339px 2px;width: 14px;height: 16px;float: left;}
 .medal_down{width: 31px;height: 13px;margin: 0 auto;background-image: url("images/xz_arr_b_130704.png");cursor: pointer;}
 
 
 /*投票*/
-.side2{width: 275px;height: 390px;margin: 0 auto;padding-top: 1px;border:1px solid #cfb879;background-color: #f7f2be;}
+.side2{width: 275px;height: 390px;margin: 0 auto;padding-top: 1px;border:1px solid #cfb879;background-color: #d1e4f1;}
 .side2Content{width: 245px;height: 63px;padding: 10px 0 0 15px;color: #988712;line-height: 20px;}
 .side2Content a{color:#dd8b2a;text-decoration: none;}
 .side2Content a:hover{text-decoration: underline;}
