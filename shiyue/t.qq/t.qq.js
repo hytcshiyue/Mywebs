@@ -95,19 +95,117 @@ $(function(){
     $(".medalBox7").mouseout(function(){
      $(".q7").hide(); 
    });
+    //给图片打勾
+    $(".OKK").click(function(){
+      $(".OK").hide();
+    $(".baifenbi img").css("display","block");
+    
+    });
 //推荐收听部分
 $().hover()
+// 发微博下面的小标识
+$(".MoreBox").click(function(){
+    $(".dropBox").show();
+    return false;
+});
+$(".dropBox").click(function(){
+
+  return false;
+});
+$(document).click(function(){
+
+  $(".dropBox").hide();
+});
 //评论框的弹出和关闭
   $(".pinglun").click(function(){
 
 
    $(".pinglunText").show();
+   $(".quanbuText").hide();
+   $(".zhuanboText").hide();
   });
   $(".close").click(function(){
 
 
    $(".pinglunText").hide();
   });
+//转播框的弹出和关闭
+  $(".zhuanbo").click(function(){
+
+
+   $(".zhuanboText").show();
+   $(".pinglunText").hide();
+   $(".quanbuText").hide();
+  });
+  $(".close").click(function(){
+
+
+   $(".zhuanboText").hide();
+  });
+  // 点收藏
+  $(".shoucang").click(function(){
+
+    $(".shoucang").hide();
+   $(".quxiaoshoucang").show();
+});
+   $(".quxiaoshoucang").click(function(){
+
+    $(".quxiaoshoucang").hide();
+   $(".shoucang").show();
+});
+// 点赞
+ $(".jia1").click(function(){
+
+    $(".jia1").hide();
+   $(".jia").show();
+   $(".dianzan").css("background-position","-306px -112px");
+});
+   $(".jia").click(function(){
+
+    $(".jia").hide();
+   $(".jia1").show();
+   $(".dianzan").css("background-position","-290px -112px");
+});
+// 查看全部转播和评论
+ $(".quanbuAll").click(function(){
+
+   $(".quanbuText").show();
+   $(".pinglunText").hide();
+   $(".zhuanboText").hide();
+
+
+  });
+  $(".close").click(function(){
+
+
+   $(".quanbuText").hide();
+  });
+$(".tabStyle11").click(function(){
+  $(".claerContent11").show();
+  $(".tabStyle11 ").css("border-bottom","0px");
+  $(".tabStyle12 ").css("border-bottom","1px solid #ddd");
+  $(".tabStyle13 ").css("border-bottom","1px solid #ddd");
+  $(".claerContent12").hide();
+  $(".claerContent13").hide();
+});
+$(".tabStyle12").click(function(){
+  $(".claerContent12").show();
+  $(".tabStyle12 ").css("border-bottom","0px");
+  $(".tabStyle11 ").css("border-bottom","1px solid #ddd");
+  $(".tabStyle13 ").css("border-bottom","1px solid #ddd");
+  $(".claerContent11").hide();
+  $(".claerContent13").hide();
+});
+$(".tabStyle13").click(function(){
+  $(".claerContent13").show();
+  $(".tabStyle13 ").css("border-bottom","0px");
+   
+  $(".tabStyle12 ").css("border-bottom","1px solid #ddd");
+  $(".tabStyle11 ").css("border-bottom","1px solid #ddd");
+
+  $(".claerContent12").hide();
+  $(".claerContent11").hide();
+});
 
 });
 
