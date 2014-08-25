@@ -15,7 +15,7 @@
 .logo{width: 180px;height: 34px;float: left;}
 .search{width: 272px;height:32px;border: 1px solid #c3c3c3; display: inline-block;}
 .search input{border: 0px;}
-.dbText{width: 240px;height: 20px;font-size: 12px;color:#999;margin-top: 5px;text-align: start;padding-left: 5px;}
+.dbText{width: 240px;height: 25px;font-size: 12px;line-height: 20px; color:#999;margin-top: 5px;text-align: start;padding-left: 5px;outline: none;}
 .bn{background-image: url("css/image/bn_srh_1.png");background-position: 0px; float: right;width: 13px;height: 14px;overflow: hidden;margin-top: 10px;margin-right: 10px;}
 .links{width: 460px;height: 21px;float: right;margin-top: 5px;padding-left: 10px;}
 /*Login*/
@@ -33,7 +33,7 @@
 .loginbutton a{font-size: 12px;color: white;text-decoration: none;padding-left:25px;line-height: 30px;}
 .loginbutton:hover{background-color:#1c9439;}
 .loginKuang{width: 155px;height: 33px;border: 1px solid #ccc;background-color: white;}
-.lgText{font-size: 12px;color:#999;margin-top: 5px;text-align: start;padding-left: 10px;}
+.lgText{font-size: 12px;color:#999;margin-top: 5px;text-align: start;padding-left: 10px;height: 28px;outline: none;line-height: 20px;}
 .lgText span{font-size: 12px;color:#fff;padding-left: 5px;}
 .loginKuang input{border: 0px;}
 .opt{width: 158px;height: 20px;padding-top: 5px;}

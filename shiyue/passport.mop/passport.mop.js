@@ -1,32 +1,32 @@
 $(function(){
 
 	
-    $(".choice-register").hover(function(){
-    	$(".register-form").show();
-    	$(".login-form").hide();
+    $(".choice-register").click(function(){
+        $(".register-form").show();
+        $(".login-form").hide();
+        $(this).css("background-color","rgb(46,115,190)");
+        $(".choice-login").css("background-color","");
 
     });
-
-$(".choice-login").hover(function(){
+$(".choice-login").click(function(){ 
+    $(".choice-register").css("background-color","");
     	$(".login-form").show();
     	$(".register-form").hide();
+        $(this).css("background-color","rgb(46,115,190)");
+       
     });
 
-$(".choice-register").hover(function(){
-	$(this).css("background-color","rgb(46,115,190)");
 
-},function(){
 
-	$(this).css("background-color","");
-});
-$(".choice-login").hover(function(){
-	$(this).css("background-color","rgb(46,115,190)");
 
-},function(){
+// $(".choice-login").hover(function(){
+	
 
-	$(this).css("background-color","");
-    $(".choice-register").css("background-color","");
-});
+// },function(){
+
+// 	$(this).css("background-color","");
+//     $(".choice-register").css();
+// });
 
 $(".link_notice").click(function(){ 
         showImage();
@@ -35,10 +35,10 @@ $(".link_notice").click(function(){
 
 var index=2;
 function showImage(){
-        $(".image_code").css("backgroundImage",'url("images/imgcode ('+index+').do")');
+        $(".image_code").css("backgroundImage",'url("images/imgcode ('+index+').png")');
         
         index++;                           
-        if( index==6){
+        if( index==5){
             index=1;
         }
     }

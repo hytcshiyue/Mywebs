@@ -68,14 +68,15 @@
 				</li>
 			</ul>
 			<ul class="ContentLeft2">
-				<li class="ConLeft2Li">
-					<a href="#" class="shoujian">收件箱(20)</a>
+				<li class="ConLeft2Li specil">
+					<a href="#" class="shoujian ">收件箱(20)</a>
 				</li>
 				<li class="ConLeft2Li">
 					<a href="#" class="xinbiao">星标邮件</a>
+					<span class="shuzi" >(1)</span>
 						<em class="xing"></em>
-					
-				</li>
+				</li>	
+				
 				<li class="ConLeft2Li">
 					<a href="#" class="shoujian">群邮件(3)</a>
 				</li>
@@ -131,15 +132,33 @@
 			</div>
 			<div class="xuanzelan">
 				<ul class="buttons">
-					<li><input type="button"  class="shanchu"  value="删除" ></li>
-					<li><input type="button"  class="shanchu"  value="彻底删除"></li>
-					<li><input type="button"  class="shanchu"  value="转发"></li>
-					<li><input type="button"  class="shanchu"  value="举报"></li>
-					<li><input type="button"  class="shanchu"  value="全部标为已读"></li>
-					<li><input type="button"  class="shanchu"  value="标记为..."></li>
-					<li><input type="button"  class="shanchu"  value="移动到..."></li>
-				</ul>
-				<div class="right">
+					<li class="dele">
+						<a href="#" ><input type="button"  value="删除" style="padding-left:5px;padding-right:5px"></a>
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="彻底删除" style="padding-left:5px;padding-right:5px"/></a>
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="转发" style="padding-left:5px;padding-right:5px"></a>
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="举报" style="padding-left:5px;padding-right:5px"></a>
+					</li>
+					<li  class="yidu">
+						<a href="#"><input type="button"  value="全部标为已读" style="padding-left:5px;padding-right:5px"/></a>
+					</li>
+					<li class="biaoji">
+						<a href="#"><input type="button"  value="标记为..." style="padding-left:5px;padding-right:5px" /></a>
+						<span class="sanjiao"></span>
+						
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="移动到..." style="padding-left:5px;padding-right:5px"/></a>
+					</li>
+					
+				</ul>	
+				<!-- <div class="biaojichoice"></div> -->
+      			<div class="right">
 					<span>1/5页</span>
 					<a href="#">下一页</a>
 					<a href="#">跳转</a>
@@ -147,14 +166,183 @@
 			</div>
 			<div class="shoulie">
 				<ul>
-				    <li class="li1"><a ><input type="checkbox" class="choice"/></a></li>
-				    <li class="li2"><a class="xinxi"></a></li>
+				    <li class="li1"><a ><input type="checkbox" id="ch1" isch="no"/></a></li>
+				    <li class="li2"><img src="images/egfsrghtr.png"></li>
 				    <li class="li3"><a class="">发件人</a></li>
 				    <li class="li4"><a class="">主题</a></li>
 				    <li class="li5"><a class="">时间↓</a></li>
 			    </ul>
 			</div>
-			
+			<div class="gengzao"><b>更早</b>（<span>25封</span>）</div>
+			<ul class="xinArea">
+				<div class="xinAreaLi">
+				    <li class="liA"><a isshow="no"><input type="checkbox" class="choice" name="1"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Instagram </a></li>
+				    <li class="liD"><a class="">欢迎使用 Instagram -  @tentenmoon，欢迎使用 Instagram！  确认电子邮箱，开始与世界分享你捕捉的精彩瞬间。  确认你的电子邮</a></li>
+				    <li class="liE" id="dj"><a class="">8月8日</a><a href="#" class="fg"></a>
+                       <a href="#" class="fg1"></a>
+                    </li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a isshow="no" ><input type="checkbox" class="choice" name="1"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Web-Mail </a></li>
+				    <li class="liD"><a class="">接收-通知：恭喜您获得场外二等奖用户</a></li>
+				      <li class="liE"><a class="">8月7日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a  isshow="no"><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a  class="xinxi"></a></li>
+				    <li class="liC"><a class="">QQ安全中心 </a></li>
+				    <li class="liD"><a class="">QQ号码申诉联系方式确认</a></li>
+				      <li class="liE"><a class="">8月6日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a isshow="no"><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">陈苗清 </a></li>
+				    <li class="liD"><a class="">主体软件</a></li>
+				   <li class="liE"><a class="">1月1日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a isshow="no" ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">张群 </a></li>
+				    <li class="liD"><a class="">、、寄来的贺卡《新的一年》</a></li>
+				      <li class="liE"><a class="">1月1日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a isshow="no" ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">QQ邮箱管理员 </a></li>
+				    <li class="liD"><a class="">好友生日提醒任务</a></li>
+				     <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">蓬莱女神 </a></li>
+				    <li class="liD"><a class="">法宝飞剑连环出，修仙路上显奇迹</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">小顾 </a></li>
+				    <li class="liD"><a class="">打开看看我写的</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">小马 </a></li>
+				    <li class="liD"><a class="">或许吧</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	     <a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Instagram </a></li>
+				    <li class="liD"><a class="">欢迎使用 Instagram -  @tentenmoon，欢迎使用 Instagram！  确认电子邮箱，开始与世界分享你捕捉的精彩瞬间。  确认你的电子邮</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Instagram </a></li>
+				    <li class="liD"><a class="">欢迎使用 Instagram -  @tentenmoon，欢迎使用 Instagram！  确认电子邮箱，开始与世界分享你捕捉的精彩瞬间。  确认你的电子邮</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Instagram </a></li>
+				    <li class="liD"><a class="">欢迎使用 Instagram -  @tentenmoon，欢迎使用 Instagram！  确认电子邮箱，开始与世界分享你捕捉的精彩瞬间。  确认你的电子邮</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Instagram </a></li>
+				    <li class="liD"><a class="">欢迎使用 Instagram -  @tentenmoon，欢迎使用 Instagram！  确认电子邮箱，开始与世界分享你捕捉的精彩瞬间。  确认你的电子邮</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Instagram </a></li>
+				    <li class="liD"><a class="">欢迎使用 Instagram -  @tentenmoon，欢迎使用 Instagram！  确认电子邮箱，开始与世界分享你捕捉的精彩瞬间。  确认你的电子邮</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+				<div class="xinAreaLi">
+				    <li class="liA"><a ><input type="checkbox" class="choice"/></a></li>
+				    <li class="liB"><a class="xinxi"></a></li>
+				    <li class="liC"><a class="">Instagram </a></li>
+				    <li class="liD"><a class="">欢迎使用 Instagram -  @tentenmoon，欢迎使用 Instagram！  确认电子邮箱，开始与世界分享你捕捉的精彩瞬间。  确认你的电子邮</a></li>
+				      <li class="liE"><a class="">8月8日</a><a href="#" class="fg"></a>
+				   	<a href="#" class="fg1"></a></li>
+				</div>
+			</ul>
+			<div class="list_btline">
+				<li>
+				   <span >选择:</span>
+				   <a >全部</a>
+				   <span>-</span>
+				   <a >无</a>
+				   <span>-</span>
+				   <a >已读</a>
+				   <span>-</span>
+				   <a >未读</a>
+			    </li>
+			</div>
+			<div class="xuanzelan">
+				<ul class="buttons">
+					<li class="dele">
+						<a href="#" ><input type="button"  value="删除" style="padding-left:5px;padding-right:5px"></a>
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="彻底删除" style="padding-left:5px;padding-right:5px"/></a>
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="转发" style="padding-left:5px;padding-right:5px"></a>
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="举报" style="padding-left:5px;padding-right:5px"></a>
+					</li>
+					<li  class="yidu">
+						<a href="#"><input type="button"  value="全部标为已读" style="padding-left:5px;padding-right:5px"/></a>
+					</li>
+					<li class="biaoji">
+						<a href="#"><input type="button"  value="标记为..." style="padding-left:5px;padding-right:5px" /></a>
+						<span class="sanjiao"></span>
+						
+					</li>
+					<li>
+						<a href="#"><input type="button"  value="移动到..." style="padding-left:5px;padding-right:5px"/></a>
+					</li>
+					
+				</ul>	
+      			<div class="right">
+					<span>1/5页</span>
+					<a href="#">下一页</a>
+					<a href="#">跳转</a>
+				</div>
+			</div>
+
 		</div>
 
 	</div>

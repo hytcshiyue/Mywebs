@@ -1,7 +1,62 @@
 $(function(){
 
 
-	/*好友列表收起与展开*/
+	 
+
+
+
+	// //背景图片
+	// $("#PCLeft").hover(function(){
+	// 	$(this).css("background-position","-2px -42px");
+	// },function(){
+	// 	$(this).css("background-position","");
+	// });
+	// $("#PCRight").hover(function(){
+	// 	$(this).css("background-position","-25px -42px");
+	// },function(){
+	// 	$(this).css("background-position","");
+	// });
+	
+	
+	// $("#PCLeft").click(function(){
+	// 	var index= $("body").attr("bgindex");
+	// 	if(index=="1"){
+	// 		index =6;
+	// 	}
+	// 	index --;
+	// 	$("body").css("background-image",'url("images/background_0'+ index +'.jpg")');
+	// 	var index= $("body").attr("bgindex",index);
+	// });
+	// $("#PCRight").click(function(){
+	// 	var index= $("body").attr("bgindex");
+
+	// 	if(index == "6"){
+	// 		index=0;
+	// 	}
+		
+	// 	index ++;
+	// 	$("body").css("background-image",'url("images/background_0'+ index +'.jpg")');
+	// 	var index= $("body").attr("bgindex",index);
+	// });
+
+
+$(".qqimageEve").click(function(){
+   $(".qqimages").hide();
+});
+
+	//好友，群，讨论组的切换
+	$(".LXRChatKindLi").click(function(){
+		
+		var upid=$(this).attr("upid");
+		//alert(upid);
+		$(".LXRList").addClass("disnone");
+		$("#"+upid).removeClass("disnone");
+		$(".LXRChatKindLi").removeClass("LXRChatKindSpe");
+		$(this).addClass("LXRChatKindSpe");
+	});
+
+
+	//好友列表收起与展开
 	$(".LXRLiA").click(function(){
 		var isshow = $(this).parent().find(".LXRLiDes").attr("isshow");
 
@@ -18,91 +73,7 @@ $(function(){
 	});
 
 
-	//好友，群，讨论组的切换
-	$(".LXRChatKindLi").click(function(){
-		
-		var upid=$(this).attr("upid");
-		//alert(upid);
-		$(".LXRList").addClass("disnone");
-		$("#"+upid).removeClass("disnone");
-		$(".LXRChatKindLi").removeClass("LXRChatKindSpe");
-		$(this).addClass("LXRChatKindSpe");
-	});
-
-
-    //切换QQ下面的栏目
-	$(".FAF01").click(function(){
-		$(this).find(".FAFPic").addClass("FAFP01");
-		$(".FAFPic02").removeClass("FAFP02");
-		$(".FAFPic03").removeClass("FAFP03");
-		$(".FAFPic04").removeClass("FAFP04");
-
-		$(".FAFLi").removeClass("FAFChangeColor");
-		$(this).addClass("FAFChangeColor");
-
-		$(".FriendA").addClass("disnone");
-		$("#huihua").removeClass("disnone");
-	});
-	$(".FAF02").click(function(){
-		$(this).find(".FAFPic").addClass("FAFP02");
-		$(".FAFPic01").removeClass("FAFP01");
-		$(".FAFPic03").removeClass("FAFP03");
-		$(".FAFPic04").removeClass("FAFP04");
-
-		$(".FAFLi").removeClass("FAFChangeColor");
-		$(this).addClass("FAFChangeColor");
-
-		$(".FriendA").addClass("disnone");
-		$("#lianxiren").removeClass("disnone");
-	});
-	$(".FAF03").click(function(){
-		$(this).find(".FAFPic").addClass("FAFP03");
-		$(".FAFPic01").removeClass("FAFP01");
-		$(".FAFPic02").removeClass("FAFP02");
-		$(".FAFPic04").removeClass("FAFP04");
-
-		$(".FAFLi").removeClass("FAFChangeColor");
-		$(this).addClass("FAFChangeColor");
-
-		$(".FriendA").addClass("disnone");
-		$("#faxian").removeClass("disnone");
-	});
-	$(".FAF04").click(function(){
-		$(this).find(".FAFPic").addClass("FAFP04");
-		$(".FAFPic01").removeClass("FAFP01");
-		$(".FAFPic03").removeClass("FAFP03");
-		$(".FAFPic02").removeClass("FAFP02");
-
-		$(".FAFLi").removeClass("FAFChangeColor");
-		$(this).addClass("FAFChangeColor");
-
-		$(".FriendA").addClass("disnone");
-		$("#shezhi").removeClass("disnone");
-	});
-
-
-	//在线状态的切换
-	$(".onlineState").click(function(){
-		
-		var isshow = $(".OSList").attr("isshow");
-
-		if(isshow == "no"){
-			$(".OSList").show();
-			$(".OSList").attr("isshow","yes");
-
-
-
-			//切换图标
-			$(".OSLi").click(function(){
-				var OSthisclass = $(this).find(".onlineIcon").attr("class");
-				$(".SZIcon").attr("class",OSthisclass +" SZIcon");
-			});
-		}
-		else{
-			$(".OSList").hide();
-			$(".OSList").attr("isshow","no");
-		}
-//选取表情
+	//选取表情
 	$(document).on("click", ".qqimageEve", function () {
 	//$(".qqimageEve").click(function(){
 		var imageContent = $(this).attr("title");
@@ -140,7 +111,7 @@ $(function(){
 		chatContentHtml +='								<div class="TalkDesContentA">';
 		chatContentHtml +='									<div class="TCAHeader"></div>';
 		chatContentHtml +='									<div class="TCALeft">';
-		chatContentHtml +='										<div class="TCALNickName">Van</div>';
+		chatContentHtml +='										<div class="TCALNickName">我</div>';
 		chatContentHtml +='										<div class="TCALWords">'+ MyWords+'</div>';
 		chatContentHtml +='									</div>';								
 		chatContentHtml +='								</div>';
@@ -195,15 +166,106 @@ $(function(){
 		});
 
 
+
+	//在线状态栏的切换
+	$(".onlineState").click(function(){
 		
-		//增设聊天框
-		chathtml();
+		var isshow = $(".OSList").attr("isshow");
+
+		if(isshow == "no"){
+			$(".OSList").show();
+			$(".OSList").attr("isshow","yes");
+
+
+
+			//切换图标
+			$(".OSLi").click(function(){
+				var OSthisclass = $(this).find(".onlineIcon").attr("class");
+				$(".SZIcon").attr("class",OSthisclass +" SZIcon");
+			});
+		}
+		else{
+			$(".OSList").hide();
+			$(".OSList").attr("isshow","no");
+		}
+
+		
+
 	});
 
+	//alert("1");
+	//切换QQ下面的栏目
+	$(".FAF01").click(function(){
+		$(this).find(".FAFPic").addClass("FAFP01");
+		$(".FAFPic02").removeClass("FAFP02");
+		$(".FAFPic03").removeClass("FAFP03");
+		$(".FAFPic04").removeClass("FAFP04");
+
+		$(".FAFLi").removeClass("FAFChangeColor");
+		$(this).addClass("FAFChangeColor");
+
+		$(".FriendA").addClass("disnone");
+		$("#huihua").removeClass("disnone");
+	});
+	$(".FAF02").click(function(){
+		$(this).find(".FAFPic").addClass("FAFP02");
+		$(".FAFPic01").removeClass("FAFP01");
+		$(".FAFPic03").removeClass("FAFP03");
+		$(".FAFPic04").removeClass("FAFP04");
+
+		$(".FAFLi").removeClass("FAFChangeColor");
+		$(this).addClass("FAFChangeColor");
+
+		$(".FriendA").addClass("disnone");
+		$("#lianxiren").removeClass("disnone");
+	});
+	$(".FAF03").click(function(){
+		$(this).find(".FAFPic").addClass("FAFP03");
+		$(".FAFPic01").removeClass("FAFP01");
+		$(".FAFPic02").removeClass("FAFP02");
+		$(".FAFPic04").removeClass("FAFP04");
+
+		$(".FAFLi").removeClass("FAFChangeColor");
+		$(this).addClass("FAFChangeColor");
+
+		$(".FriendA").addClass("disnone");
+		$("#faxian").removeClass("disnone");
+	});
+	$(".FAF04").click(function(){
+		$(this).find(".FAFPic").addClass("FAFP04");
+		$(".FAFPic01").removeClass("FAFP01");
+		$(".FAFPic03").removeClass("FAFP03");
+		$(".FAFPic02").removeClass("FAFP02");
+
+		$(".FAFLi").removeClass("FAFChangeColor");
+		$(this).addClass("FAFChangeColor");
+
+		$(".FriendA").addClass("disnone");
+		$("#shezhi").removeClass("disnone");
+	});
+
+
+
+
+
+	//添加聊天框
+	chathtml();
+
+
+
 	
-		
+
+	
+
 
 });
+  
+
+
+
+
+
+
 
 
 function chathtml(){

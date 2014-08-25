@@ -21,21 +21,22 @@ $(".product_item").hover(function(){
   });
 
 
-$(".pic21").click(function(){
-  
-  $(this).prev().find(".listcont1").hide();
-     $(this).prev().find(".listcont").show();
-
-
-  
-
-});
-
 $(".pic23").click(function(){
-  $(this).prev().find(".listcont1").show();
+  $(this).prev().find(".listcont1").show();//往返前一个网页
  $(this).prev().find(".listcont").hide();
+ $(this).css("background-position","-36px -787px");
+  $(".pic21").css("background-position","-64px -787px");
 });
 
+$(".pic21").click(function(){
+
+  $(this).next().find(".listcont1").hide();
+  $(this).next().find(".listcont").show();
+  $(this).css("background-position","0px -787px");
+   $(".pic23").css("background-position","-96px -787px");
+
+});
+  
 
 
 

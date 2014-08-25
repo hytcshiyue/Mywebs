@@ -25,21 +25,27 @@
 
 /*左边列表*/
 #ContentLeft{ height: 596px;float: left;border-left: 1px solid #b0bac6;background:#e8ebef;}
-
+input:checked
+{ 
+background-color: #ff0000;
+}
 #ContentRight{width: 1175px;height:586px;float: left;padding-top: 10px;}
-/*#ContentLeft li:hover{background-color: ?;}*/
+#ContentLeft li:hover{background-color: #bcc2cd;}
 .ContentLeft1{width: 187px;height: 95px;padding-top: 10px;}
-.ConLeftLi{width: 187px;height: 24px;padding-bottom: 10px;}
+.ConLeftLi{width: 187px;height: 18px;padding-bottom: 10px;}
 .ConLeftLiImg{width: 20px;height: 20px;background-image: url("images/cca104472.gif");float: left;margin-left: 20px;}
 .xiexin{padding-left: 12px;line-height: 20px;font-weight: bold;text-decoration: none;color: #354b66;font-size: 14px;font-family: "lucida Grande",Verdana;}
 .a1{background-position: 0 -33px;}
 .a2{background-position: 0 -63px;}
 .ContentLeft2{width: 187px;height:194px;border-top: 1px solid #b0bac6;border-bottom:1px solid #b0bac6; }
-.ConLeft2Li{width: 170px;height: 22px;padding-top:2px;margin-left: 12px;}
+.ConLeft2Li{width: 170px;height: 22px;padding-top:2px;padding-left: 12px;}
 .ConLeft2Li a{color:  rgb(53, 75, 102);text-decoration: none;line-height: 20px;padding-left: 12px;}
+.specil{background-color: #475d76;}
+.specil a{color: #fff;}
 .shoujian{font-weight: bold;}
+.shuzi{float: left;margin-top: 3px;}
 .xinbiao{float: left;padding-right: 5px;}
-.xing{background-image: url("images/mail1d47c7.png");background-position: -80px -176px;width: 12px;height: 12px;background-repeat: no-repeat;margin-top: 3px; float: left;}
+.xing{background-image: url("images/mail1d47c7.png");background-position: -80px -176px;width: 12px;height: 12px;background-repeat: no-repeat;margin-top: 3px; float: left;margin-left: 3px;}
 .qingkong{float: right;}
 .qita{width: 187px;height: 28px;border-bottom: 1px solid #b0bac6; }
 .qita a{color:  rgb(53, 75, 102);text-decoration: none;line-height: 20px;padding-left: 25px;}
@@ -52,19 +58,38 @@
 .weidu:hover{text-decoration: underline;}
 .xuanzelan{width: 1146px;height: 40px;border: 1px solid #9fa8b3;background-color: #bcc2cd;margin-left: 8px;}
 .buttons{width:504px ;height: 24px;padding: 7px 0 7px 7px;float: left;}
-.buttons li{float: left;margin-right: 5px;}
+.buttons li{float: left;}
+.buttons li a{padding-left: 5px;padding-right: 5px;line-height: 20px;}
 .shanchu{padding-left: 8px;padding-right:8px;height: 24px;border-radius: 3px;background-color: #fff;}
 .right{float: right;padding: 8px 5px 0 0;}
 .right a{color: #3D5E86;text-decoration: none;}
 .right a:hover{text-decoration: underline;}
 
 .shoulie{width: 1146px;height: 23px;border-bottom:1px solid #c1c8d2; margin-left: 8px;background-color: #f2f4f6;}
-.shoulie li{float: left;padding: 3px 0 0 5px;}
+.shoulie li{float: left;padding: 3px 0 0 5px;cursor: pointer;}
+.shoulie a:hover{text-decoration: underline;}
 .choice{margin-top: 2px;}
-.xinxi{width: 26px;height: 16px;background-image: url("images/mail1d47c7.png");background-position: -112px -3px;}
+
 .li1{width:32px ;height:22px;border-right: 1px solid #c1c8d2;}
 .li2{width:32px ;height:22px;border-right: 1px solid #c1c8d2;}
 .li3{width:147px ;height:22px;border-right: 1px solid #c1c8d2;}
 .li4{width:806px ;height:22px;border-right: 1px solid #c1c8d2;}
 .li5{width:90px ;height:22px;}
-
+.gengzao{width: 1146px;height: 23px;border-bottom:2px solid #c1c8d2; padding: 8px 0 3px 9px;color: #3D5E86;margin-left: 8px; }
+.gengzao b{font-size: 14px;}
+.gengzao span{text-decoration: underline;}
+.xinArea{width: 1146px;height: 390px;margin-left: 8px;}
+.liA{width:32px ;height:22px;}
+.liB{width:32px ;height:22px;}
+.liC{width:147px ;height:22px;}
+.liD{width:806px ;height:22px;}
+.liE{width:90px ;height:22px;}
+.fg{background-image:url("images/mail1d47c7.png");background-position:-32px -160px;width: 14px;height: 14px;float: right;position: relative; }
+.fg1{background-image:url("images/mail1d47c7.png");background-position:-48px -160px;width: 14px;height: 14px;float: right;position: relative;left: 14px;display: none;}
+.xinArea li{float: left;padding: 3px 0 0 5px;cursor: pointer;border-bottom: 1px solid #ddd;}
+.xinxi{background-image: url("images/mail1d47c7.png");background-position: -48px 0; width: 18px;height: 16px;background-repeat: no-repeat;display: block;}
+.list_btline{width: 1146px;height: 26px;border-bottom:1px solid #c1c8d2; margin-left: 8px;background-color: #f2f4f6;}
+.list_btline li{padding: 5px 0 0 5px;}
+.list_btline span{color: #A8ADB8;}
+.list_btline a{color: #3D5E86;padding-left: 3px;}
+.list_btline a:hover{text-decoration: underline;}

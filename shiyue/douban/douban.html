@@ -11,7 +11,7 @@
 	<div id="anony-nav">
 		<div class="logo"><img src="images/logo_db.png"></div>
 		<div class="search">
-			<input type="text" value="书籍、电影、音乐、小组、小站、成员"  class="dbText"/>
+			<input type="text" value="书籍、电影、音乐、小组、小站、成员" onfocus="if(this.value=='书籍、电影、音乐、小组、小站、成员') {this.value=''}" onblur="if(this.value=='') {this.value='书籍、电影、音乐、小组、小站、成员'}"  class="dbText"/>
 			<span class="bn"></span>	
 		</div>
 		<div class="links"><a href=""><img src="css/image/anony_nav_logo5.png"></a></div>
@@ -26,16 +26,16 @@
 				</div>
 				<div class="loginRight">
 					<div class="loginName">
-						<div class="loginKuang"> <input type="text" value="邮箱/手机号"  class="lgText"/> 
+						<div class="loginKuang"> <input type="text" value="邮箱/手机号"  class="lgText" onfocus="if(this.value=='邮箱/手机号') {this.value=''}" onblur="if(this.value=='') {this.value='邮箱/手机号'}"/> 
 						</div>
 						<div class="opt">
 							<label>
-								<input name="remember" type="checkbox" class="choice">记住我
+								<input name="remember" type="checkbox" class="choice" >记住我
 							</label>
 						</div>
 					</div>
 					<div class="loginPasswd">
-						<div class="loginKuang"> <input type="text" value="密码"  class="lgText"/> 
+						<div class="loginKuang"> <input type="text" value="密码"  class="lgText" onfocus="if(this.value=='密码') {this.value=''}" onblur="if(this.value=='') {this.value='密码'}"/> 
 						</div>
 						<div class="opt">
 							<a href="#" class="optname">忘记密码</a>

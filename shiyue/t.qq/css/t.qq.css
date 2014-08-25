@@ -1,8 +1,8 @@
-/*整体框架*/
+﻿/*整体框架*/
 #header{width: 100%;min-width:1349px;height: 35px;background-color: #333;z-index: 2000;position: fixed;}
-#contentZ{width: 100%;min-width:1349px;height: 2900px;}
-.content{width: 960px;height: 2900px;margin:0px auto;}
-.content1{width: 960px;height: 2900px;border: 1px solid #ccc;border-radius: 5px 5px 0 5px;}
+#contentZ{width: 100%;min-width:1349px;height:3100px;}
+.content{width: 960px;height:3100px;margin:0px auto;}
+.content1{width: 960px;height:3100px;border: 1px solid #ccc;border-radius: 5px 5px 0 5px;}
 #taobaoPic{width: 960px;height: 90px;margin-top:10px;margin-left: 195px;background-image: url("../images/4ef92984d3582.png");}
 #kongbai{width: 1349px;height: 80px;}
 #footer{width: 960px; height: 42px;margin-top:10px;margin-left: 195px;text-align: center;}
@@ -56,14 +56,14 @@ h6 a{color: #006a92;text-decoration: none;padding-left: 10px;line-height: 16px;f
 .cSign{color: #E57600;line-height: 16px;padding-left: 10px;}
 
 /*内容左*/
-.main{width: 641px;height: 2900px;float:left;background: #fff;}
+.main{width: 641px;height:3100px;float:left;background: #fff;}
 .talkBox{width: 580px;height: 150px;padding: 0 30px 10px 30px;margin-bottom: 10px;}
 .talkBoxTop{width: 570px;height: 28px;padding: 10px 5px 0 5px;}
 .talkBTPight{font-size: 16px;color: #999;}
 .talkBTleft{width: 120px;height: 31px;float: right;text-decoration: none;color: #889db6;}
 .talkBTleft:hover{text-decoration: underline;}
 .sendCnt{width: 578px;height: 70px;border: 1px solid #D0D0D0;border-radius: 3px 3px 0 0;}
-textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border: 0;}
+textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border: 0;outline:none;}
 .a1{margin: 11px;border-width: 0 10px 10px 10px;}
 .a1 u{border-left-color: #fff;border-width: 0 8px 8px 8px;margin:1px 0 0 -10px;}
 #a2{height: 69px;width: 577px;}
@@ -100,7 +100,7 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
  .flashContral{width: 13px;height:13px;border:1px solid #ddd;float: left;display: block;text-align: center;font-weight: bold; font-family: Arial;color::#dd8b2a; background-color: #fafafa;margin:0 10px 0 0; }
  .currentSpan{background-color: #a9a9a9;color: #fafafa;border:1px solid #61af47;}
 /*全部广播*/
-.Allarea{width: 580px;height: 2600px;margin:25px auto;}
+.Allarea{width: 580px;height: 2700px;margin:25px auto;}
 .AllareaTop{width: 580px;height: 30px;border-bottom: 1px solid #e4e4e4;}
 .AllareaaTLeft{float: left;}
 .AllATLLi{float: left;text-align: center;padding: 3px 12px 7px 12px;}
@@ -110,7 +110,7 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
 .AllareaaTRight{float: right;width: 48px;height: 30px;}
 .tubiao1{float: left;background-image: url("images/b1_20140716.png");background-position: -308px 0;width: 16px;height: 16px;margin: 9px 6px 0 0;}
 .tubiao2{float: left;background-image: url("images/b1_20140716.png");background-position: -323px 0;width: 16px;height: 16px;margin: 9px 6px 0 0;}
-.AllareaContent{width: 580px;height: 2550px;}
+.AllareaContent{width: 580px;}
 .c1{width: 580px;height: 218px;padding: 16px 0 18px 0;}
 .c2{width: 580px;height: 80px;padding: 16px 0 18px 0;}
 .c3{width: 580px;height: 260px;padding: 16px 0 18px 0;}
@@ -140,6 +140,8 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
 .line{width: 582px;border-bottom: 1px dotted #ddd;padding-top: 10px;}
 
 /*弹出评论框*/
+.pinglun {text-decoration: none;color: #006a92;}
+.pinglun:hover{text-decoration: underline;}
 .quanbuText{width: 520px;height: 210px;border: 1px solid #DEE3E3;margin-left:60px;display: none;}
 .zhuanboText{width: 520px;height: 117px;border: 1px solid #DEE3E3;margin-left:60px;display: none;}
 .pinglunText{width: 520px;height: 117px;border: 1px solid #DEE3E3;margin-left:60px;display: none;}
@@ -188,11 +190,11 @@ textarea{width: 97.9%;padding:3px 1%;margin: -1px auto 0;font-size: 14px;border:
 .hotNewsTitle{padding-top: 12px;font-size: 14px;}
 .hotNewsTitle a{text-decoration: none;color: #333;}
 .hotNewsCont{padding-top: 3px;line-height: 19px;color: #999;}
-.gengduo{width: 580px;height: 37px;margin-top: 10px;border: 1px solid #ddd;background-color: #eee;border-radius: 3px;text-align: center;position: relative;}
+.gengduo{width: 580px;height: 37px;margin-top: 20px;border: 1px solid #ddd;background-color: #eee;border-radius: 3px;text-align: center;position: relative;}
 .gengduo a{font-size: 14px;text-decoration: none;color:#006A92;line-height: 30px;font-weight: bold;}
 .xltubiao{background-image: url("images/b1_20140716.png");background-position: -294px -55px;width: 16px;height: 16px;float: right;position: relative;top: 8px;right: 260px;}
 /*内容右*/
-.side{width: 319px;height: 2900px;float: right;background-color: #daebf8;float: left;}
+.side{width: 319px;height: 3100px;float: right;background-color: #daebf8;float: left;}
 /*个人资料*/
 .side1{width: 319px;height: 190px;padding-top: 18px;}
 .side11{width: 269px;height: 88px;padding: 0 25px 3px 25px;}
