@@ -1,0 +1,4 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;padding: 0;}
+img{border: 0;}
+body{width: 99%;height: 100%;font-family:"Microsoft Yahei";font-size: 12px;text-decoration: none;background-image: url("../images/bg.png");}
