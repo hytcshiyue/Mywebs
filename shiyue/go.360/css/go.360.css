@@ -1,6 +1,6 @@
 /*整体框架*/
 #tuniu{width: 1000px;height: 150px;margin: 0 auto;display: block;}
-#menu{width: 1000px;height: 101px;margin: 20px auto;background-image: url("../images/t01a14689fa6ca7dc75.png");background-repeat: no-repeat;;background-position: 0 8px;}
+#menu{position: relative; width: 1000px;height: 101px;margin: 20px auto;background-image: url("../images/t01a14689fa6ca7dc75.png");background-repeat: no-repeat;background-position: 0 8px;}
 #main{width: 100%;min-width: 1349px;margin:0 auto; }
 #guanggao{ display: block; width: 1000px;height: 360px;margin: 0  auto;border: 1px solid #ddd;position: relative;background-image: url("../images/1.jpg");}
 #content{width: 1000px;height: 1980px;margin: 15px auto;}
@@ -19,8 +19,15 @@
 .hotel i{background-position: 0 -119px;}
 .train i{background-position: 0 -229px;}
 .tuan i{background-position: 0 -175px;}
-.tripmapi i{background-position: 0 -338px;}
+.tripmap i{background-position: 0 -338px;}
 .website i{background-position: 0 -398px;}
+.nav-sub{display: none; width: 76px;height: 100px;border-right: 1px solid #ccc;border-left: 1px solid #ccc;position: absolute;padding-left: 21px;z-index: 2000;background-color: #fff;}
+.nav-sub li{height: 49px;margin-right: 15px;float:left;}
+.nav-sub a{color: #333;text-decoration: none;font-size: 14px;text-align: center;}
+.nav-sub a:hover{text-decoration: underline;color: #dc1b50;}
+.nav-holiday{top: 97px;left: 307px;}
+.nav-hotel{top: 97px;left: 503px;}
+.nav-train{top: 97px;left: 601px;}
 /*广告flash*/
 .control{width: 120px;height: 20px;position: absolute;left:60px;top:310px;}
 .flashcontrol{display: block; width: 14px;height: 14px;border:2px solid #dadbdb;border-radius: 100% ;float: left;margin-left:10px;background: rgba(73,96,120,.6);}
@@ -34,6 +41,21 @@
 .item-hotel{background-position: 0 -100px;}
 .item-flight{background-position: 0 -150px;}
 .item-top {background-position: 0 -200px;height: 64px;}
+/*.search-ticket{position: absolute;width: 314px;height: 358px;border:1px solid #e5d9e1;background-color: #dce0e2;top:0;right: 50px;color: #666;}
+.filter{width: 294px;height: 300px;margin: 10px 10px;}
+.filterA{width: 290px;cursor: pointer;display: block;height: 36px;}
+.filterA ul{border-bottom: 2px solid #e6e9ed;height: 32px;}
+.filterA li{float: left;padding: 5px 10px;width: 70px;text-align: center;}
+.tab{font-size: 16px;font-weight: bold;}
+.current{color: #e60012;}
+.filterB{margin-top: 10px;}
+.filterB1{width: 290px;font-size: 16px;height: 24px;}
+.filterB1 li{float: left;padding: 0 10px;}
+.filterB2{height:50px;}
+.filterB2 span{float: left;font-size: 16px;padding: 8px 8px;width: 64px;line-height: 34px;}*/
+/*.filterB21{float: left;width: 190px;border:1px solid #abadb3;;}
+.ip-text{padding: 8px 6px;padding-right: 90px;width: 120px;font-size: 14px;color: #666;display: block;outline: none;width: 120px;}
+.city{background-image:url("images/t019b52dbb6775397ac.gif");background-repeat: no-repeat; }*/
 /*1*/
 
 .content1{width: 1000px;margin-bottom: 10px;background: #fff;}
@@ -82,9 +104,9 @@
 .pagecontent span{display: block;float: left;line-height: 40px;}
 .pagepalce{float: right;padding-top: 14px;}
 .pagepalce li{float: left;margin-right: 5px;}
-.pagepalce a{text-decoration: none;color: #5a9e2c;font-size: 14px;font-family: Arial; height: 24px;line-height: 24px;text-align: center;padding: 0 8px;display: block;}
+.pagepalce a{cursor: pointer; text-decoration: none;color: #5a9e2c;font-size: 14px;font-family: Arial; height: 24px;line-height: 24px;text-align: center;padding: 0 8px;display: block;}
 .pagepalce a:hover{background-color: #5a9e2c;color: #fff;border-radius: 3px;font-weight: bold;}
-
+/*.NavSelect{background-color: #629f3c;border-radius: 3px;color: #fff;}*/
 
 .tabPlace{width: 106px;height: 40px;}
 .tabDate{width: 36px;height: 40px;}
@@ -101,9 +123,9 @@
 
 @-webkit-keyframes loops
 {
-0%    {background-position: -0px -457px}
-10%   {background-position: -6px -457px}
-15%   {background-position: -9px -457px}
+0%    {background-position: -0px  -457px}
+10%   {background-position: -6px  -457px}
+15%   {background-position: -9px  -457px}
 20%   {background-position: -12px -457px}
 25%   {background-position: -15px -457px}
 30%   {background-position: -18px -457px}
@@ -124,10 +146,10 @@
 }
 @-webkit-keyframes loops1
 {
-0%    {background-position: 0px -59px}
-10%   {background-position: 3px -59px}
-15%   {background-position: 6px -59px}
-20%   {background-position: 9px -59px}
+0%    {background-position: 0px  -59px}
+10%   {background-position: 3px  -59px}
+15%   {background-position: 6px  -59px}
+20%   {background-position: 9px  -59px}
 25%   {background-position: 12px -59px}
 30%   {background-position: 15px -59px}
 35%   {background-position: 18px -59px}
@@ -148,9 +170,9 @@
 
 @-webkit-keyframes loops2
 {
-0%    {background-position: -0px -119px}
-10%   {background-position: -6px -119px}
-15%   {background-position: -9px -119px}
+0%    {background-position: -0px  -119px}
+10%   {background-position: -6px  -119px}
+15%   {background-position: -9px  -119px}
 20%   {background-position: -12px -119px}
 25%   {background-position: -15px -119px}
 30%   {background-position: -18px -119px}
@@ -171,9 +193,9 @@
 }
 @-webkit-keyframes loops3
 {
-0%    {background-position: -0px -229px}
-10%   {background-position: -6px -229px}
-15%   {background-position: -9px -229px}
+0%    {background-position: -0px  -229px}
+10%   {background-position: -6px  -229px}
+15%   {background-position: -9px  -229px}
 20%   {background-position: -12px -229px}
 25%   {background-position: -15px -229px}
 30%   {background-position: -18px -229px}
@@ -194,9 +216,9 @@
 }
 @-webkit-keyframes loops4
 {
-0%    {background-position: -0px -175px}
-10%   {background-position: -6px -175px}
-15%   {background-position: -9px -175px}
+0%    {background-position: -0px  -175px}
+10%   {background-position: -6px  -175px}
+15%   {background-position: -9px  -175px}
 20%   {background-position: -12px -175px}
 25%   {background-position: -15px -175px}
 30%   {background-position: -18px -175px}
@@ -217,9 +239,9 @@
 }
 @-webkit-keyframes loops5
 {
-0%    {background-position: -0px -338px}
-10%   {background-position: -6px -338px}
-15%   {background-position: -9px -338px}
+0%    {background-position: -0px  -338px}
+10%   {background-position: -6px  -338px}
+15%   {background-position: -9px  -338px}
 20%   {background-position: -12px -338px}
 25%   {background-position: -15px -338px}
 30%   {background-position: -18px -338px}
@@ -240,9 +262,9 @@
 }
 @-webkit-keyframes loops6
 {
-0%    {background-position: -0px -398px}
-10%   {background-position: -6px -398px}
-15%   {background-position: -9px -398px}
+0%    {background-position: -0px  -398px}
+10%   {background-position: -6px  -398px}
+15%   {background-position: -9px  -398px}
 20%   {background-position: -12px -398px}
 25%   {background-position: -15px -398px}
 30%   {background-position: -18px -398px}

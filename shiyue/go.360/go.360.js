@@ -35,6 +35,26 @@ $(function(){
 	},function(){
 		$(this).find(".website i").css({"-webkit-animation":"none"});
 	});
+
+
+	$(".holiday ").mouseover(function(){
+		$(".nav-holiday").show();
+	});
+	$(".holiday ").mouseout(function(){
+		$(".nav-holiday").hide();
+		// $(".nav-holiday").webkit-animation({"height":"2000px"});
+	});
+	
+	$(".hotel ").hover(function(){
+		$(".nav-hotel").show();
+	},function(){
+		$(".nav-hotel").hide();
+	});
+	$(".train ").hover(function(){
+		$(".nav-train").show();
+	},function(){
+		$(".nav-train").hide();
+	});
 // 广告动画
 	$(".flashcontrol").click(function(){
 		currIndex=$(this).attr("picIndex");
@@ -50,14 +70,28 @@ $(function(){
 
 
 
-// $(".leftcontrol").click(function(){
+$(".leftcontrol").click(function(){
+       
+  		showFlashImage();
+	
+});
+$(".rightcontrol").click(function(){
+       
+  		showFlashImage();
+});
+	
+// $(".pagepalce li").click(function(){
 
-// 	$(this).next().next().children().show();
+
+//    $(this).css({"background-color":" #629f3c","color":" #fff"});
+	
 // });
+
 });
 var timeHandle;
 var currIndex=2;
 function showFlashImage(){
+
 	$("#guanggao").css("background-image",'url("images/' + currIndex +'.jpg")');
 	$(".flashControl").removeClass("currentspan");
 	$("#controlspan"+ currIndex ).addClass("currentspan");
