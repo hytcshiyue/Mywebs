@@ -1,0 +1,12 @@
+#head{width: 100%;min-width:1366px;height: 53px;border-bottom: 1px solid #191919;margin-bottom: 1px;background-color: #000;z-index: 1000;position: fixed;}
+#content{width: 100%;height: 2570px;background-color: #fff;}
+
+.close-head{width: 40px;height: 52px;margin-left: 5px;float: left;display: block;}
+.close-button{display: block;width: 16px;height: 16px;border: 1px solid #545454;margin: 17px 11px 0 11px;text-indent: -9999px;background-image: url("images/button-17795f92ca8e8b7cb702e5bb9bf081d0.gif");background-repeat: no-repeat;}
+.meta-data{float: left;display: block;line-height: 53px;font-size: 10px;color:#6e6e6e;}
+.meta-data a{color: #6e6e6e;text-decoration: none;margin-right: 10px;margin-left: 10px;}
+.meta-data a:hover{color: #fff;}
+.logo{width: 270px;height: 52px;display: block;background-image: url("../images/themeforest-purchasethis-71f56a79736ebb0f4a4d6b7dacb7cf80.png");background-repeat: no-repeat;float: right;margin-right: 10px;}
+
+.content1{width: 1349px;height: 434px;background-image: url("../images/tumblr_static_c5o6eyfvasgk48swkg808kw.jpg");background-repeat: no-repeat;background-position-x:-550px; }
+.content2{width: 1026px;height: 1800px;margin: 0 auto;border: 1px solid #ddd;margin-top:64px; }

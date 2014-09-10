@@ -1,0 +1,794 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"> 
+<html>
+<head>
+	<title>360旅游</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/normal.css">
+	<link rel="stylesheet" type="text/css" href="CSS/go.360.css">
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="go.360.js"></script>
+</head>
+<body>
+	<div id="tuniu" >
+		<a href="#">
+			<img src="images/t019d43f871f6bdf445.jpg">
+		</a>
+	</div>
+	<div id="menu">
+		<h1 class="logo"><a href="#"><img src="images/t01ed4f5aa22168dbf1.png"></a></h1>
+		<ul class="nav">
+			<li class="cur">
+				<a href="#" class="home">
+					<i></i>
+					首页
+				</a>
+			</li>
+			<li>
+				<a href="#" class="holiday">
+					<i></i>
+					旅游渡假
+				</a>
+			</li>
+			<li>
+				<a href="#" class="flight">
+					<i></i>
+					机票
+				</a>
+			</li>
+			<li>
+				<a href="#" class="hotel">
+					<i></i>
+					酒店
+				</a>
+			</li>
+			<li>
+				<a href="#" class="train">
+					<i></i>
+					火车票
+				</a>
+			</li>
+			<li>
+				<a href="#" class="tuan">
+				<i></i>		
+					限时特价
+				</a>
+			</li>
+			<li>
+				<a href="#" class="tripmap">
+					<i></i>
+					景点大全
+				</a>
+			</li>
+			<li>
+				<a href="#" class="website">
+					<i></i>
+					旅游网址
+				</a>
+			</li>
+		</ul>
+		<ul class="nav-sub nav-holiday">
+			<li>
+				<a href="#">签证</a>
+			</li>
+			<li>
+				<a href="#">保险</a>
+			</li>
+		</ul>
+		<ul class="nav-sub nav-hotel">
+			<li>
+				<a href="#">海外酒店</a>
+			</li>
+			<li>
+				<a href="#">度假公寓</a>
+			</li>
+		</ul>
+		<ul class="nav-sub nav-train">
+			<li>
+				<a href="#">长途汽车</a>
+			</li>
+			<li>
+				<a href="#">欧铁</a>
+			</li>
+		</ul>
+	</div>
+	<div class="main">
+		<div id="guanggao">
+			<div class="leftcontrol"></div>
+			<div class="control">
+				<span id="controlspan1" class="flashcontrol currentspan" picIndex="1"></span>
+				<span id="controlspan2" class="flashcontrol " picIndex="2"></span>
+				<span id="controlspan3" class="flashcontrol " picIndex="3"></span>
+				<span id="controlspan4" class="flashcontrol " picIndex="4"></span>
+			</div>
+			<div class="rightcontrol"></div>
+			<!-- <div class="search-ticket">
+				<div class="filter">
+					<div class="filterA">
+						<ul>
+							<li class="tab current">国内机票</li>
+							<li class="tab">国际机票</li>
+						</ul>
+					</div>
+					<div class="filterB">
+						<ul class="filterB1">
+							<li>
+								<label>
+									<input type="radio" name="type"  tabindex="1" value="1" checked>
+									单程
+								</label>			
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="type"  tabindex="2" value="2" checked>
+									往返
+								</label>			
+							</li>
+						</ul>
+						<div class="filterB2">
+							<span>出发城市</span>
+							<div class="filterB21"><input type="text" tabindex="3" value="北京" class="ip-text city"></div>
+						</div>
+						<div class="filterB3"></div>
+						<div class="filterB4"></div>
+						<div class="filterB5"></div>
+						<div class="filterB6">查询</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<div class="page-floor">
+			<ul>
+				<li class="item-special">
+					<a href="#tehui">特惠</a>
+				</li>
+				<li class="item-line">
+					<a href="#xianlu">线路</a>
+				</li>
+				<li class="item-hotel">
+					<a href="#jiudian">酒店</a>
+				</li>
+				<li class="item-flight">
+					<a href="#jipiao">机票</a>
+				</li>
+				<li class="item-top">
+					<a href="#tuniu">顶部</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div class="content1" id="tehui">
+			<div class="hd">
+				<h2>今日优惠</h2>
+				<h3 class="subtit">每日上新，特价旅行一网打尽</h3>
+				<ul class="le-tabs">
+					<li>
+						<a href="#">海岛游</a>
+					</li>
+					<li>
+						<a href="#">日韩游</a>
+					</li>
+					<li>
+						<a href="#">港澳台</a>
+					</li>
+					<li>
+						<a href="#">东南亚</a>
+					</li>
+					<li>
+						<a href="#">国内游</a>
+					</li>
+					<li>
+						<a href="#">更多>></a>
+					</li>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul class="bdul">
+					<li class="item-1">
+						<a href="#">
+							<img src="images/t01c986e0efe2959692.jpg">
+						</a>
+					</li>
+					<li class="item-2">
+						<a href="#" >
+							<img src="images/t0183dd3aa08c92de62.jpg" >
+						</a>
+						<a href="#">
+							<img src="images/t01ed4e3971449a20fa.jpg">
+						</a>
+					</li>
+					<li class="item-3">
+						<a href="#">
+							<img src="images/t0173adab529a06eaf1.jpg" >
+						</a>
+						<a href="#">
+							<img src="images/t0145fd5d78450b13f5.jpg">
+						</a>
+					</li>
+					<li class="item-4">
+						<a href="#">
+							<img src="images/t01e55b37939efe6442.jpg">
+						</a>
+					</li>
+				</ul>
+				<ul class="partners">
+					<li>
+						<a href="#">
+							<img src="images/t01cc0adeeb6fdb6e02.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/t01d4b73c8cd6d3282d.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/t01ab81126efe40ba62.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/t01589b34632a2ee380.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/t01167cbc3154205da0.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/t01e8fa2bef24b499f2.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/t011a4250071901f71d.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content1" id="xianlu">
+			<div class="hd d1">
+				<h2>热门线路</h2>
+				<ul class="le-tabs">
+					<li>
+						<a href="#">泰国</a>
+					</li>
+					<li>
+						<a href="#">欧洲</a>
+					</li>
+					<li>
+						<a href="#">日韩</a>
+					</li>
+					<li>
+						<a href="#">美洲</a>
+					</li>
+					<li>
+						<a href="#">香港</a>
+					</li>
+					<li>
+						<a href="#">国内</a>
+					</li>
+					<li>
+						<a href="#">更多>></a>
+					</li>
+				</ul>
+			</div>
+			<div class="bd">
+				<div class="cell-1">
+					<dl class="ui-dl">
+						<dt>国内游</dt>
+						<dd>
+							<a href="#">三亚</a>|
+							<a href="#">青岛</a>|
+							<a href="#">丽江</a>|
+							<a href="#">拉萨</a>
+						</dd>
+						<dd>
+							<a href="#">厦门</a>|
+							<a href="#">北京</a>|
+							<a href="#">张家界</a>|
+							<a href="#">九寨沟</a>
+						</dd>
+						<dd>
+							<a href="#">杭州</a>|
+							<a href="#">大连</a>|
+							<a href="#">长白山</a>|
+							<a href="#">桂林</a>
+						</dd>
+					</dl>
+					<dl class="ui-dl">
+						<dt>出境游</dt>
+						<dd>
+							<a href="#">新加坡</a>|
+							<a href="#">巴厘岛</a>|
+							<a href="#">西班牙</a>|
+							<a href="#">马尔代夫</a>
+						</dd>
+						<dd>
+							<a href="#">日本</a>|
+							<a href="#">港澳</a>|
+							<a href="#">台湾</a>|
+							<a href="#">韩国</a>
+						</dd>
+						<dd>
+							<a href="#">美国</a>|
+							<a href="#">非洲</a>|
+							<a href="#">肯尼亚</a>|
+							<a href="#">帕劳</a>
+						</dd>
+					</dl>
+					<dl class="ui-dl last">
+						<dt>主题游</dt>
+						<dd>
+							<a href="#">当季热门</a>|
+							<a href="#">亲子游</a>|
+							<a href="#">小资之游</a>|
+							<a href="#">蜜月游</a>
+						</dd>
+						<dd>
+							<a href="#">浪漫海岛</a>|
+							<a href="#">自驾游</a>|
+							<a href="#">轻奢旅行</a>|
+							<a href="#">陪爸妈</a>
+						</dd>
+					</dl>
+				</div>
+				<ul class="cell-2">
+					<li class="item-11">
+						<a href="#">
+							<img src="images/t01320f04bcfbac9eec.jpg">
+						</a>
+						<a href="#">
+							<img src="images/t01f537932c2c3ee936.jpg">
+						</a>
+					</li>
+					<li class="item-1">
+						<a href="#">
+							<img src="images/t01dfb80f689ef73177.jpg">
+						</a>
+					</li>
+					<li class="item-12">
+						<a href="#">
+							<img src="images/t01c7e6bb0de271a8de.jpg">
+						</a>
+						<a href="#">
+							<img src="images/t01807f2335cdbc82b9.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content1" id="jiudian">
+			<div class="hd d2">
+				<h2>精品酒店</h2>
+				<ul class="le-tabs">
+					<li>
+						<a href="#">上海</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">厦门</a>
+					</li>
+					<li>
+						<a href="#">丽江</a>
+					</li>
+					<li>
+						<a href="#">三亚</a>
+					</li>
+					<li>
+						<a href="#">成都</a>
+					</li>
+					<li>
+						<a href="#">更多>></a>
+					</li>
+				</ul>
+			</div>
+			<div class="bd">
+				<div class="cell-1">
+					<dl class="ui-dl guonei">
+						<dt >国内酒店</dt>
+						<dd>
+							<a href="#">北京</a>|
+							<a href="#">上海</a>|
+							<a href="#">广州</a>|
+							<a href="#">深圳</a>
+						</dd>
+						<dd>
+							<a href="#">杭州</a>|
+							<a href="#">南京</a>|
+							<a href="#">西安</a>|
+							<a href="#">成都</a>
+						</dd>
+						<dd>
+							<a href="#">三亚</a>|
+							<a href="#">厦门</a>|
+							<a href="#">青岛</a>|
+							<a href="#">大连</a>
+						</dd>
+					</dl>
+					<dl class="ui-dl guonei">
+						<dt>国际酒店</dt>
+						<dd>
+							<a href="#">香港</a>|
+							<a href="#">澳门</a>|
+							<a href="#">新加坡</a>|
+							<a href="#">曼谷</a>
+						</dd>
+						<dd>
+							<a href="#">普吉岛</a>|
+							<a href="#">马累</a>|
+							<a href="#">东京</a>|
+							<a href="#">洛杉矶</a>
+						</dd>
+						<dd>
+							<a href="#">纽约</a>|
+							<a href="#">旧金山</a>|
+							<a href="#">济州岛</a>|
+							<a href="#">巴厘岛</a>
+						</dd>
+					</dl>
+					<dl class="ui-dl last guonei">
+						<dt>热门酒店</dt>
+						<dd>
+							<a href="#">三亚</a>|
+							<a href="#">厦门</a>|
+							<a href="#">九寨沟</a>|
+							<a href="#">桂林</a>
+						</dd>
+						<dd>
+							<a href="#">杭州</a>|
+							<a href="#">长白山</a>|
+							<a href="#">丽江</a>|
+							<a href="#">马尔代夫</a>
+						</dd>
+						<dd>
+							<a href="#">青岛</a>|
+							<a href="#">大连</a>|
+							<a href="#">香港</a>|
+							<a href="#">东京</a>
+						</dd>
+					</dl>
+				</div>
+				<ul class="cell-2">
+					<li class="item-11">
+						<a href="#">
+							<img src="images/t01320f04bcfbac9eec.jpg">
+						</a>
+						<a href="#">
+							<img src="images/t01a63100145e56e364.jpg">
+						</a>
+					</li>
+					<li class="item-11">
+						<a href="#">
+							<img src="images/t0128318b80b26a74b3.jpg">
+						</a>
+						<a href="#">
+							<img src="images/t0130f7ffad607db918.jpg">
+						</a>
+					</li>
+					<li class="item-12">
+						<a href="#">
+							<img src="images/t0100b821c54b58d447.jpg">
+						</a>
+						<a href="#">
+							<img src="images/t01f86959499f307d14.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content1" id="jipiao">
+			<div class="hd d3">
+				<h2>特价机票</h2>
+				<ul class="le-tabs">
+					<li>
+						<a href="#">更多>></a>
+					</li>
+				</ul>
+			</div>
+			<div class="page">
+				<div class="pageTop">
+					<em></em>
+					<h3>百元机票推荐</h3>
+				</div>
+				<ul class="pagecontent">
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+				</ul>
+				<div class="pageTop">
+					<em></em>
+					<h3>相约暑假游，机票提前购</h3>
+					<ul class="pagepalce">
+						<li><a  class="NavS beijing changeColor">北京</a></li>
+						<li><a  class="NavS hangzhou">杭州</a></li>
+						<li><a  class="NavS xiamen">厦门</a></li>
+						<li><a  class="NavS kunming">昆明</a></li>
+						<li><a  class="NavS guangzhou">广州</a></li>
+						<li><a  class="NavS shenzhen">深圳</a></li>
+						<li><a  class="NavS chengdu">成都</a></li>
+						<li><a  class="NavS chongqing">重庆</a></li>
+						<li><a  class="NavS guilin">桂林</a></li>
+					</ul>
+				</div>
+				<ul class="pagecontent">
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="tabPlace">延安-西安</span>
+							<span class="tabDate">08-31</span>
+							<span class="tabPrice">￥49</span>
+							<span class="tabSale">0.4折</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div id="footer">
+		<p class="link">
+			<a href="#">意见反馈</a>|
+			<a href="#">官方微博</a>|
+			<a href="#">加入收藏</a>|
+			<a href="#">关于我们</a>|
+			<a href="#">联系方式</a>
+		</p>
+		<p class="copyright">
+			Copyright © 360网址导航. All Rights Reserved.
+			<a href="#">京ICP证080047号</a>
+		</p>
+	</div>
+</body>
+</html>
